@@ -1,0 +1,144 @@
+*{margin: 0;padding: 0;}
+*, *:before, *:after { box-sizing: border-box;}
+html, body, .page{ width: 100%;height: 100%;}
+.wrap { position: relative;height:100%;width:100%;overflow: hidden;}
+.sec {position:absolute;left:0;top:0;width:100%;height:100%;-webkit-backface-visibility: hidden;}
+.sec section {overflow: hidden;position:absolute;width: 100%;height:100%;left:0;top:0;-webkit-backface-visibility: hidden;}
+.page{background-size: cover;background-position: center;background-repeat: no-repeat;background-image: url("../img/bg.png");}
+.page-container {-webkit-transform-origin:0 0;width: 320px;height:504px;position: absolute;}
+.zIndex{z-index: 10;}
+.hide{display: none;}
+.loading .logo, .loading .logo .logo-inner {position: absolute;background-size: contain;background-repeat: no-repeat;}
+.loading { position: absolute;top: 0;bottom: 0;left: 0;right: 0;height: 100%;width: 100%;overflow: hidden;outline: 0;z-index: 10;background-color: #B02F30;}
+.loading .logo {height: 32px;width: 162px;background-position: center;background-image: url(../img/loadImg.png);margin-top: -50px;left: 50%;top:50%;-webkit-transform: translate(-50%,-50%);}
+.loading .tips {position: absolute;top: 50%;margin-top: 60px;width: 320px;margin-left: -160px;text-align: center;left: 50%;color:white;font-size:20px;font-weight: bold;}
+.loading .jd_num {color: #e2e2e2;}
+.same{position: absolute;width: 100%;height: 100%;}
+.landmark{left:0;top:100%;-webkit-animation: myupward 2s 1s ease forwards;}
+.house{left:0;top:100%;-webkit-animation: myupward 2s ease forwards;}
+.prospect{left:0;top:0;opacity:0;-webkit-animation:myshow 4s ease forwards;}
+.treeBox{-webkit-transform-origin:0 100%;position:absolute;width: 320px;height: 270px;left: 0;bottom: 0;opacity: 0;-webkit-animation: myshow 3s 2s linear forwards;}
+.start{position: absolute;width: 11px;height: 11px;left:74px;top:0;-webkit-transform: scale(1,1);-webkit-animation: mystart 2s ease infinite;}
+.trees{position: absolute;width: 170px;height: 269px;left: 0;bottom: 0;}
+.gearTop{position: absolute;width: 45px;height: 45px;left:57px;top:28px;-webkit-animation: myrotate 3.5s linear infinite;}
+.gearMiddle{position: absolute;width: 62px;height: 62px;left:20px;top:167px;-webkit-animation: myrotate 4s linear infinite;}
+.gearBottom{position: absolute;width: 42px;height: 42px;left:92px;top:233px;-webkit-animation: myrotate 3s linear infinite;}
+.dust{left:-100%;top:0;-webkit-animation: myright 2.5s 1s ease forwards;}
+.title{left:-100%;top:0;-webkit-animation: myright 2.5s 1.5s ease forwards;}
+.logo{left:0;top:0;opacity: 0;-webkit-animation: myshow 3s 1s ease forwards;}
+.santa{left: -100%;top:0;-webkit-animation: mypanda 3s 1s ease forwards;}
+.branchL{left: -100%;top:0;opacity:0;-webkit-animation: myright 2s 2s ease forwards;}
+.branchR{left: 100%;top:0;opacity:0;-webkit-animation: myleft 2s 2s ease forwards;}
+
+.treeBoxP2{-webkit-transform-origin:100% 100%;position:absolute;width: 320px;height: 214px;right: 0;bottom:-100%;-webkit-animation: mytrees 3s 1s ease forwards;}
+.startP2{position: absolute;width: 8px;height: 8px;right:42px;top:0;-webkit-transform: scale(1,1);-webkit-animation: mystart 2s ease infinite;}
+.treesP2{position: absolute;width: 120px;height: 205px;right: 0;top: 9px;}
+.gearTopP2{position: absolute;width: 34px;height: 34px;right:29px;top:21px;-webkit-animation: myrotate 3s linear infinite;}
+.gearMiddleP2{position: absolute;width: 47px;height: 47px;right:43px;top:128px;-webkit-animation: myrotate 4s linear infinite;}
+.gearBottomP2{position: absolute;width: 32px;height: 32px;right:4px;top:177px;-webkit-animation: myrotate 3.5s linear infinite;}
+.towerP2{left: 0;top:0;-webkit-animation: mytowerP2 2s linear forwards;}
+.wheelP2{left:100%;top:0;-webkit-animation: mytoLeft 2s linear forwards;}
+.busP2{left: -100%;top:0;-webkit-animation:mysantaP2  4s 2s ease infinite;}
+.carP2{left:-100%;top:0;-webkit-animation: mysantaP2 4s 2s ease infinite;}
+.bridgeP2{left:100%;top:0;-webkit-animation: mytoLeft 2s linear forwards;}
+.dustP2{left:0;top:0;opacity: 0;-webkit-animation: myshow 3s 2s ease forwards;}
+.titleP2{left:0;top:0;opacity: 0;-webkit-animation: myshow 3s 2.5s ease forwards;}
+.logoP2{left:0;top:0;opacity: 0;-webkit-animation: myshow 4s 2s ease forwards;}
+.santaP2{left:-100%;top:0;-webkit-animation: mysantaP2 5s ease forwards;}
+.branchLP2{left:0;top:0;opacity:0;-webkit-animation: myshow 4s ease forwards;}
+
+.treeBoxP3{-webkit-transform-origin:0 100%;position:absolute;width: 320px;height: 214px;left: 0;bottom:-100%;-webkit-animation: mytrees 3s 1s linear forwards;}
+.startP3{position: absolute;width: 8px;height: 8px;left:40px;top:0;-webkit-transform: scale(1,1);-webkit-animation: mystart 2s ease infinite;}
+.treesP3{position: absolute;width: 120px;height: 205px;left: 0;top: 9px;}
+.gearTopP3{position: absolute;width: 34px;height: 34px;left:27px;top:21px;-webkit-animation: myrotate 3s linear infinite;}
+.gearMiddleP3{position: absolute;width: 47px;height: 47px;left:0;top:128px;-webkit-animation: myrotate 4s linear infinite;}
+.gearBottomP3{position: absolute;width: 32px;height: 32px;left:54px;top:176px;-webkit-animation: myrotate 3.5s linear infinite;}
+.windmillBox{-webkit-transform-origin:100% 100%;position:absolute;width: 320px;height: 140px;right: 0;bottom: 0;-webkit-animation: mywindmill 2s ease forwards;}
+.windmillP3{position: absolute;width:205px;height: 112px;right:0;bottom:0;}
+.dialP3{position: absolute;width: 123px;height: 123px;right:98px;top:0;-webkit-animation: myrotate 2s linear infinite;}
+.goddessP3{left: 100%;top:0;-webkit-animation: mytoLeft 2s ease forwards;}
+.carP3{left:-100%;top:0;-webkit-animation:mysantaP2 4s 2s linear infinite;}
+.bridgeP3{left: 100%;top:0;-webkit-animation: mytoLeft 2s ease forwards;}
+.dustP3{left:0;top:0;opacity: 0;-webkit-animation: myshow 3s 2s ease forwards;}
+.titleP3{left:0;top:0;opacity: 0;-webkit-animation: myshow 3s 2.5s ease forwards;}
+.santaP3{left:-100%;top:0;-webkit-animation: mysantaP2 4s ease forwards;}
+.logoP3{left:0;top:0;opacity: 0;-webkit-animation: myshow 3s 2s ease forwards;}
+.branchLP3{left:0;top:0;opacity:0;-webkit-animation: myshow 4s ease forwards;}
+
+.pandaP4{left:-100%;top:0;-webkit-animation: mypanda 3s 4s ease forwards;}
+.floorP4{left:0;top:0;opacity:0;-webkit-animation:myshow 4s ease forwards;}
+.treeBoxP4{-webkit-transform-origin:100% 100%;position:absolute;width: 320px;height: 214px;right: 0;bottom: -100%;-webkit-animation: mytrees 3s  ease forwards;}
+.dustP4{left:0;top:0;opacity: 0;-webkit-animation: mydisappear 2.5s 1.5s ease forwards;}
+.titleP4{left:0;top:0;opacity: 0;-webkit-animation: mydisappear 2.5s 1.7s ease forwards;}
+.santaP4{left:-100%;top:0;-webkit-animation: mysantaP2 5s ease forwards;}
+.logoP4{left:0;top:0;opacity: 0;-webkit-animation: myshow 3s 1.7s ease forwards;}
+.branchLP4{left:0;top:0;opacity:0;-webkit-animation: myshow 4s ease forwards;}
+.fireworks{left: 0;top:0;opacity: 0;-webkit-animation:myshow 4s 4s ease forwards;}
+.slogan{left: 0;top:0;opacity: 0;-webkit-animation:myshow 4s 4.5s ease forwards;}
+.titleEnd{left: 0;top:0;opacity: 0;-webkit-animation:myshow 4s 5s ease forwards;}
+
+@-webkit-keyframes myshow{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@-webkit-keyframes mystart{
+    0%{-webkit-transform: scale(1,1);}
+    50%{-webkit-transform: scale(.65,.65);}
+    100%{-webkit-transform: scale(1,1);}
+}
+@-webkit-keyframes mysanta{
+    0%{left:-100%;}
+    100%{left:47%;}
+}
+@-webkit-keyframes myleft{
+    0%{left:100%;opacity:0;}
+    80%{opacity:0.4;}
+    100%{left:0;opacity:1;}
+}
+@-webkit-keyframes myright{
+    0%{left:-100%;opacity:0;}
+    70%{opacity:0.3;}
+    100%{left:0;opacity:1;}
+}
+@-webkit-keyframes myupward{
+    0%{top:100%;}
+    100%{top:0;}
+}
+@-webkit-keyframes myrotate {
+    0%{-webkit-transform: rotate(0deg);}
+    100%{-webkit-transform: rotate(360deg);}
+}
+@-webkit-keyframes mytrees {
+    0%{bottom: -100%;}
+    100%{bottom:0;}
+}
+@-webkit-keyframes mytowerP2 {
+    0%{left: 0;}
+    100%{left:-100%;}
+}
+@-webkit-keyframes mysantaP2 {
+    0%{left:-100%;}
+    100%{left:100%;}
+}
+@-webkit-keyframes mywindmill {
+    0%{right: 0;bottom: 0;}
+    100%{right:100%;bottom: 0;}
+}
+@-webkit-keyframes mytoLeft {
+    0%{left:100%;}
+    100%{left:0;}
+}
+@-webkit-keyframes mydisappear {
+    0%{opacity: 0;}
+    70%{opacity: 1;}
+    95%{opacity: 1;}
+    100%{opacity: 0;}
+}
+@-webkit-keyframes mypanda {
+    0%{left:-100%;}
+    100%{left:0;}
+}
+.arrow-down{background-image:url(../img/up.png);background-size: cover;background-position: center;background-repeat: no-repeat;width:20px;height:12px;position: absolute;bottom:14px;left:50%;-webkit-animation: myarrow 1s infinite; -webkit-transform: translate3d(-50%, 0 ,0);}
+@-webkit-keyframes myarrow {
+    50% {-webkit-transform: translate3d(-50%, 50%, 0);}
+}
